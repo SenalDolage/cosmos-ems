@@ -43,7 +43,7 @@
             <td>{{ employee.lastName }}</td>
             <td>{{ employee.designation }}</td>
             <td>{{ employee.insuranceBalance | currency: "Rs " }}</td>
-            <td>{{ employee.rbtProgress }}</td>
+            <td><ems-progress-bar [progress]='employee.rbtProgress'></ems-progress-bar></td>
           </tr>
         </tbody>
       </table>
