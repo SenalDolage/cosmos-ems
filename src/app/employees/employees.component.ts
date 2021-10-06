@@ -13,6 +13,7 @@ export class EmployeesComponent implements OnInit {
   employees: Employee[] = employees;
   filteredEmployees: Employee[] = employees;
   showIcon: boolean = true;
+  message: string ='';
   private _designationFilter: string = '';
 
   set designationFilter(value: string) {
@@ -36,5 +37,9 @@ export class EmployeesComponent implements OnInit {
     this.filteredEmployees = this.employees.filter((item) =>
       item.designation.includes(this._designationFilter)
     );
+  }
+
+  onMessageReceived(value: string){
+    this.message = value;
   }
 }
