@@ -3,7 +3,6 @@ import { Employee } from 'src/types';
 import employees from './data/employees.json';
 
 @Component({
-  selector: 'ems-employees',
   templateUrl: './employees.component.html',
   styleUrls: ['./employees.component.scss'],
 })
